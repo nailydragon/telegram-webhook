@@ -1,8 +1,10 @@
 services:
-  - type: web
-    name: telegram-ai-webhook
-    env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
-    autoDeploy: true
+- type: web
+  name: telegram-webhook
+  runtime: python
+  repo: https://github.com/nailydragon/telegram-webhook
+  plan: free
+  region: singapore
+  buildCommand: pip install -r requirements.txt
+  startCommand: python main.py
+version: "1"
