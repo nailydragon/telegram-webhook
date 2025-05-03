@@ -1,5 +1,3 @@
-requirements.txt
-
-nginx
-Copy
-Edit
+flask
+requests
+gunicorn
